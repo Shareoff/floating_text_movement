@@ -7,11 +7,12 @@ Use at your own caution, this is obviously useful in very niche situations.
 Feel free to ping/dm me any questions, problems, suggestions etc.
 
 ## Installation Instructions
-1. install python (https://www.python.org/downloads/). make sure to add python to PATH in the installation process
-2. open a terminal in the folder where you downloaded this file (you can do this by navigating there and then writing cmd in the file explorer address line if you're on windows)
-3. run `python -m ensurepip --upgrade`
-4. run `pip install click`
-5. now you're ready to run the script! run `python ./floating_text_movement.py` and hopefully the script will instruct you through the rest.
+1. Install python (https://www.python.org/downloads/). make sure to add python to PATH in the installation process
+2. Download `floating_text_movement.py` (from this repository) to any folder on your PC.
+3. Open a terminal in the folder where you downloaded the file (you can do this by navigating there and then writing cmd in the file explorer address line if you're on windows)
+3. Run `python -m ensurepip --upgrade`
+4. Run `pip install click`
+5. Now you're ready to run the script! run `python ./floating_text_movement.py` and hopefully the script will instruct you through the rest.
 
 ## Why would I use this over room movement / making a CC with my text?
 You may not have enough rooms, or enough CCs, because you're using them for other things.
@@ -29,3 +30,8 @@ Some additional flags available are `--room` (may be called repeatedly to place 
 ## Final Words
 This is completely superfluous and extra but hey I find it funny so why not
 Go wild, have fun, and let me know if you used it (because funny!)
+
+## Changelog
+1.2: Fixed bug where using colors with Back/Elastic easings could cause invalid color values. (oops)
+1.1: Fixed flickering bug (thanks 9th and kirbycreep!). Lowered default event interval to 0.01 of a beat.
+1.0: Created this script!

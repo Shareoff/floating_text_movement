@@ -197,6 +197,8 @@ def get_color_as_hex_values(color):
 
 def get_curr_from_easing_hex(start, end, progress, easing_func):
 	val = int(round(get_curr_from_easing(start, end, progress, easing_func), 0))
+
+	# Check for overflow/underflow (each color value can be between 0 to 0xff)
 	return 0 if val < 0 else 0xff if val > 0xff else val
 
 
